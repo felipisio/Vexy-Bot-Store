@@ -293,7 +293,6 @@ async function UpdateSale(client, produtin, interaction) {
     let iconProd = Valor.Config.icon || null;
 
     const item = products.get(`proodutos.${produtin}.messageid`)
-    const guild = client.guilds.cache.get(item[0].guildid)
 
     if (CampoQnty <= 1) {
         const primeiraChave = Object.keys(Valor2)[0];
