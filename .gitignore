@@ -1,3 +1,5 @@
 node_modules/
 squarecloud.app
 package-lock.json
+token.json
+Database

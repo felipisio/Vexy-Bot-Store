@@ -422,7 +422,7 @@ module.exports = {
                         new ButtonBuilder()
                             .setCustomId(`confirmClearStock_${produtin}_${CampoSelect}`)
                             .setLabel('Confirmar')
-                            .setEmoji('1264379760113352724')
+                            .setEmoji('1296710060851855370')
                             .setStyle(3),
                         new ButtonBuilder()
                             .setCustomId(`VoltarCampoConfig_${produtin}_${CampoSelect}`)

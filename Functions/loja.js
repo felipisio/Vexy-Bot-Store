@@ -293,7 +293,6 @@ async function UpdateSale(client, produtin, interaction) {
     let iconProd = Valor.Config.icon || null;
 
     const item = products.get(`proodutos.${produtin}.messageid`)
-    const guild = client.guilds.cache.get(item[0].guildid)
 
     if (CampoQnty <= 1) {
         const primeiraChave = Object.keys(Valor2)[0];
@@ -327,6 +326,9 @@ async function UpdateSale(client, produtin, interaction) {
 
         if (bannerProd !== null) {
             embed.setImage(`${bannerProd}`)
+        }
+        if (iconProd !== null) {
+            embed.setThumbnail(`${iconProd}`)
         }
 
         const button = new ButtonBuilder()
@@ -418,6 +420,10 @@ async function UpdateSale(client, produtin, interaction) {
 
         if (bannerProd !== null) {
             embed.setImage(`${bannerProd}`)
+        }
+
+        if (iconProd !== null) {
+            embed.setThumbnail(`${iconProd}`)
         }
 
         for (const iterator in item) {
@@ -969,6 +975,7 @@ async function finalyPay(produtin, CampoSelect, userInteract, iDCarrin, client, 
                         name: `${EMOJI.vx7 == null ? `` : `<:${EMOJI.vx7.name}:${EMOJI.vx7.id}>`} Informações do Carrinho`, value: `\`x${QuantyFinaly}\` - ${itemFinaly}`, inline: false
                     },
                 )
+                .setThumbnail(userbuy.displayAvatarURL())
                 .setColor(General.get('oficecolor.green') || '#FF8201')
                 .setFooter(
                     { text: interaction.guild.name, iconURL: interaction.guild.iconURL({ dynamic: true }) }
