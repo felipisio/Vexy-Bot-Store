@@ -34,7 +34,7 @@ async function abrirTicket(interaction, valor) {
 
     const thread = await interaction.channel.threads.create({
         name: `${valor}・${interaction.user.username}・${interaction.user.id}`,
-        autoArchiveDuration: 60,
+        autoArchiveDuration: 10080,
         type: Discord.ChannelType.PrivateThread,
         reason: 'Ticket aberto',
         members: [interaction.user.id],

@@ -1,3 +1,334 @@
 {
-    "proodutos": {}
+    "proodutos": {
+        "Conta Nitrada": {
+            "Config": {
+                "name": "Conta Nitrada",
+                "desc": "Contas Nitradas\n\nContas com 1 ou 3 Meses de duração de nitro\n\nTodas com garantia total to tempo anunciado!",
+                "icon": "",
+                "banner": "https://cdn.discordapp.com/attachments/1273808912658731042/1289081178187370549/banner_CONTAS_NITRADAS.jpg?ex=6717d2a6&is=67168126&hm=032f4e5ad3ecbab66ab835219cd3db480b776c0ce5f944e4833594b30d15466f&"
+            },
+            "Campos": {
+                "Nitrada Mensal": {
+                    "name": "Nitrada Mensal",
+                    "desc": "Conta Discord com nitro de 1 mês",
+                    "price": "0.89",
+                    "emojiCampo": "1295500759735074887",
+                    "cupom": {},
+                    "estatisticas": {
+                        "vendas": 0,
+                        "vendidos": 0,
+                        "rendeu": "0.00"
+                    },
+                    "espera": [],
+                    "stock": [
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração."
+                    ]
+                },
+                "Nitrada Trimensal": {
+                    "name": "Nitrada Trimensal",
+                    "desc": "Conta Discord com Nitro 3 mês",
+                    "price": "5.99",
+                    "emojiCampo": "1295500759735074887",
+                    "cupom": {},
+                    "estatisticas": {
+                        "vendas": 0,
+                        "vendidos": 0,
+                        "rendeu": "0.00"
+                    },
+                    "espera": [
+                        "1158128943472332900",
+                        "1297257824409223323",
+                        "1188327159081746454",
+                        "1297258175220813946",
+                        "1252443884714332214"
+                    ],
+                    "stock": [
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração."
+                    ]
+                }
+            }
+        },
+        "Conta Minecraft": {
+            "Config": {
+                "name": "Conta Minecraft",
+                "desc": "Conta Microsoft (OG)\n\nMinecraft Permanente, full acesso da conta\n\nGarantia total do produto!",
+                "icon": "",
+                "banner": "https://cdn.discordapp.com/attachments/1273808912658731042/1289081178590019635/banner_minecrfat.jpg?ex=6717d2a6&is=67168126&hm=78eeef16ed13aa2ce0b979136b72fbd90bd428c1e89eb03d7904879301130cee&"
+            },
+            "Campos": {
+                "Conta com Minecraft": {
+                    "name": "Conta com Minecraft",
+                    "desc": "Minecraft Permanente",
+                    "price": "34.90",
+                    "emojiCampo": "1295500759735074887",
+                    "cupom": {},
+                    "estatisticas": {
+                        "vendas": 0,
+                        "vendidos": 0,
+                        "rendeu": "0.00"
+                    },
+                    "espera": [],
+                    "stock": [
+                        "Contate a admnistração."
+                    ]
+                }
+            }
+        },
+        "Conta Rockstar": {
+            "Config": {
+                "name": "Conta Rockstar",
+                "desc": "Licenciada para FiveM, sem ban de cidades ou global\n\nGarantia de funcionamento\n\nConta Rockstar + GTA Instalavel (Steam) -  Você recebe as credenciais de uma conta steam para instalar o GTA para jogar fiveM.\n\nPara pedidos de reembolso, necessário gravação do ato da compra e spoofando.",
+                "icon": "",
+                "banner": "https://cdn.discordapp.com/attachments/1273808912658731042/1289081177881317448/banner_conta_rockstar.jpg?ex=6717d2a6&is=67168126&hm=94151f486a1ab817882ec29d310ed32a8a585e926558668037430be6198ec9a3&"
+            },
+            "Campos": {
+                "Rockstar FiveM": {
+                    "name": "Rockstar FiveM",
+                    "desc": "Conta Rockstar para FiveM",
+                    "price": "4.90",
+                    "emojiCampo": "1295500759735074887",
+                    "cupom": {},
+                    "estatisticas": {
+                        "vendas": 0,
+                        "vendidos": 0,
+                        "rendeu": "0.00"
+                    },
+                    "espera": [],
+                    "stock": [
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração."
+                    ]
+                },
+                "Rockstar + GTA (Instalável)": {
+                    "name": "Rockstar + GTA (Instalável)",
+                    "desc": "Rockstar FiveM + GTA Steam (Instalável)",
+                    "price": "8.90",
+                    "emojiCampo": "1295500759735074887",
+                    "cupom": {},
+                    "estatisticas": {
+                        "vendas": 0,
+                        "vendidos": 0,
+                        "rendeu": "0.00"
+                    },
+                    "espera": [],
+                    "stock": [
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração."
+                    ]
+                }
+            }
+        },
+        "Impulsos": {
+            "Config": {
+                "name": "Impulsos",
+                "desc": "Impulsos Mensais\n\nImpulsos não caem, garantia total do tempo fornecido!\n\nEntregues em até 24h",
+                "icon": "",
+                "banner": "https://cdn.ereemby.com/attachments/17274494947826310imagem.jpeg"
+            },
+            "Campos": {
+                "X2 Impulsos Mensais": {
+                    "name": "X2 Impulsos Mensais",
+                    "desc": "2 Impulsos Mensais",
+                    "price": "0.99",
+                    "emojiCampo": "1295500759735074887",
+                    "cupom": {},
+                    "estatisticas": {
+                        "vendas": 0,
+                        "vendidos": 0,
+                        "rendeu": "0.00"
+                    },
+                    "espera": [],
+                    "stock": [
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração."
+                    ]
+                },
+                "X8 Impulsos Mensais": {
+                    "name": "X8 Impulsos Mensais",
+                    "desc": "8 Impulsos Mensais",
+                    "price": "3.99",
+                    "emojiCampo": "1295500759735074887",
+                    "cupom": {},
+                    "estatisticas": {
+                        "vendas": 0,
+                        "vendidos": 0,
+                        "rendeu": "0.00"
+                    },
+                    "espera": [],
+                    "stock": [
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração."
+                    ]
+                },
+                "X14 Impulsos Mensais": {
+                    "name": "X14 Impulsos Mensais",
+                    "desc": "14 Impulsos Mensais",
+                    "price": "6.99",
+                    "emojiCampo": "1295500759735074887",
+                    "cupom": {},
+                    "estatisticas": {
+                        "vendas": 0,
+                        "vendidos": 0,
+                        "rendeu": "0.00"
+                    },
+                    "espera": [
+                        "1158128943472332900",
+                        "1297257824409223323",
+                        "1188327159081746454",
+                        "1297258175220813946",
+                        "1252443884714332214"
+                    ],
+                    "stock": [
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração."
+                    ]
+                }
+            }
+        },
+        "BOT Vendas +Ticket + Moderação": {
+            "Config": {
+                "name": "BOT Vendas +Ticket + Moderação",
+                "desc": "Bot de vendas + ticket + moderação e sistema de segurança do servidor, desenvolvido por mim mesmo.\n\nPossui funções dinamicas e intuitivas em toda sua estrutura, possui sistema anti-raid, nosso sistema de loja possui informações uteis para você vendedor, que preza por um bom atendimento visando claro os lucros.\n\nBot perfeito para todas as situações aqui no Discord",
+                "icon": "",
+                "banner": ""
+            },
+            "Campos": {
+                "Bot de Loja": {
+                    "name": "Bot de Loja",
+                    "desc": "Bot para comercio discord",
+                    "price": "70.00",
+                    "emojiCampo": "1295500759735074887",
+                    "cupom": {},
+                    "estatisticas": {
+                        "vendas": 0,
+                        "vendidos": 0,
+                        "rendeu": "0.00"
+                    },
+                    "espera": [],
+                    "stock": [
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração."
+                    ]
+                }
+            }
+        },
+        "Nitro Gaming": {
+            "Config": {
+                "name": "Nitro Gaming",
+                "desc": "Nitro Gaming\n\nLinks Mensal e Trimensal\n\nElegível apenas para contas que nunca tiveram nitro, ou não tiveram nos ultimos 12 meses.",
+                "icon": "",
+                "banner": "https://cdn.discordapp.com/attachments/1273808912658731042/1289076189218082877/nitro_gaming_banner.jpg?ex=6717ce01&is=67167c81&hm=79a2dd23680c21812da7c99860fbf9f8dce2e7db4a2e09c1837613cd70dab243&"
+            },
+            "Campos": {
+                "Nitro Mensal": {
+                    "name": "Nitro Mensal",
+                    "desc": "Link promocional Nitro Mensal",
+                    "price": "0.09",
+                    "emojiCampo": "1295500759735074887",
+                    "cupom": {},
+                    "estatisticas": {
+                        "vendas": 0,
+                        "vendidos": 0,
+                        "rendeu": "0.00"
+                    },
+                    "espera": [
+                        "1158128943472332900",
+                        "1297257824409223323",
+                        "1188327159081746454",
+                        "1297258175220813946",
+                        "1252443884714332214"
+                    ],
+                    "stock": [
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração.",
+                        "Contate a admnistração."
+                    ]
+                },
+                "Nitro Trimensal": {
+                    "name": "Nitro Trimensal",
+                    "desc": "Nitro Gaming link 3 mês",
+                    "price": "2.90",
+                    "emojiCampo": "1295500759735074887",
+                    "cupom": {},
+                    "estatisticas": {
+                        "vendas": 0,
+                        "vendidos": 0,
+                        "rendeu": "0.00"
+                    },
+                    "espera": [
+                        "1158128943472332900",
+                        "1297257824409223323",
+                        "1188327159081746454",
+                        "1297258175220813946",
+                        "1252443884714332214",
+                        "1235359264566939790"
+                    ],
+                    "stock": []
+                }
+            },
+            "messageid": [
+                {
+                    "msgid": "1298304354427600988",
+                    "channelid": "1297714928492347392",
+                    "guildid": "1297322191280537670"
+                },
+                {
+                    "msgid": "1298304966649184287",
+                    "channelid": "1297714941108949013",
+                    "guildid": "1297322191280537670"
+                }
+            ]
+        }
+    }
 }

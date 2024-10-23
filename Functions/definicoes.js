@@ -569,6 +569,10 @@ async function configCoupons(produtin, CampoSelect, interaction, client) {3
         interaction.update({content:``,embeds:[embed], components:[row1, row2], ephemeral:true});
 }
 
+async function infoAPP(client, interaction) {
+    
+}
+
 module.exports = {
     definitions,
     definicoes1,

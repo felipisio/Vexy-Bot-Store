@@ -28,7 +28,6 @@ module.exports = {
             const [action, produtin] = interaction.customId.split('_');
 
             if (action === 'personalizarPRood') {
-                const produtosData = products.get(`proodutos.${produtin}.Config`);
 
                 const modal = new ModalBuilder()
                     .setCustomId(`modalEdiitProd_${produtin}`)
@@ -556,7 +555,7 @@ module.exports = {
         if (stringsS) {
             const [actionString, produtin, CampoSelect] = interaction.customId.split('_');
 
-            if (actionString === `AdquirirProd`) {
+            if (actionString === `AdquirirProdSelect`) {
                 const value = interaction.values;
                 await openCart(produtin, value, interaction);
                 UpdateStock(client, produtin, interaction);
@@ -1312,6 +1311,7 @@ module.exports = {
                 }
 
                 const oldProdCampo = oldProd.Campos;
+                const oldProdMsgId = oldProd.messageid
 
                 if (nameE !== '') {
                     const newProd = await products.get(`proodutos.${nameE}`);
@@ -1326,7 +1326,8 @@ module.exports = {
                             icon: iconN == null || iconN === '' ? oldProd.Config.icon : iconN,
                             banner: BannerR == null || BannerR === '' ? oldProd.Config.banner : BannerR
                         },
-                        Campos: oldProdCampo
+                        Campos: oldProdCampo,
+                        messageid: oldProdMsgId == null ? [] : oldProdMsgId
                     });
 
                     products.delete(`proodutos.${produtin}`);

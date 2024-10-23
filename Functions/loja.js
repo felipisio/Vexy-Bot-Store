@@ -225,7 +225,7 @@ async function CreateSale(channel, produtin, interaction, client) {
                 }
 
                 currentSelectMenuBuilder = new Discord.StringSelectMenuBuilder()
-                    .setCustomId(`AdquirirProdselect_${produtin}_${menuIndex + 1}`)
+                    .setCustomId(`AdquirirProdSelect_${produtin}_${menuIndex + 1}`)
                     .setPlaceholder(`Clique aqui para selecionar`);
             }
 
@@ -392,7 +392,7 @@ async function UpdateSale(client, produtin, interaction) {
                 }
 
                 currentSelectMenuBuilder = new Discord.StringSelectMenuBuilder()
-                    .setCustomId(`AdquirirProd_${produtin}_${menuIndex + 1}`)
+                    .setCustomId(`AdquirirProdSelect_${produtin}_${menuIndex + 1}`)
                     .setPlaceholder(`Clique aqui para selecionar`);
             }
 
@@ -556,7 +556,7 @@ async function UpdateStock(client, produtin, interaction) {
                 }
 
                 currentSelectMenuBuilder = new Discord.StringSelectMenuBuilder()
-                    .setCustomId(`AdquirirProd_${produtin}_${menuIndex + 1}`)
+                    .setCustomId(`AdquirirProdSelect_${produtin}_${menuIndex + 1}`)
                     .setPlaceholder(`Clique aqui para selecionar`);
             }
 
@@ -681,6 +681,7 @@ async function openCart(produtin, CampoSelect, interaction) {
 
     interaction.editReply({ content: `${EMOJI.vx3 == null ? `` : `<:${EMOJI.vx3.name}:${EMOJI.vx3.id}>`} Carrinho criado com sucesso!`, components: [row4] });
 
+    const agora = new Date();
 
     await carrinhos.set(`${interaction.user.id}.${iDCarrin}`, {
         idCart: iDCarrin,
@@ -689,7 +690,8 @@ async function openCart(produtin, CampoSelect, interaction) {
         valor: Number(priceCampo).toFixed(2),
         StatusBuy: 'pending',
         idPay: null,
-        cupom: null
+        cupom: null,
+        creationDate:agora
     });
 
 
@@ -769,73 +771,6 @@ async function openCart(produtin, CampoSelect, interaction) {
     const messageID = msgbuyEmbed.id;
     await carrinhos.set(`${interaction.user.id}.${iDCarrin}.messageID`, messageID);
 
-
-
-    setTimeout(() => {
-        const closeCartStat = carrinhos.get(`${interaction.user.id}.${iDCarrin}`);
-        if (closeCartStat == null) return;
-        if (closeCartStat.StatusBuy === `pending`) {
-            try {
-
-                const QuantyFinaly = carrinhos.get(`${userInteract}.${iDCarrin}.quantidade`);
-                const itemFinaly = carrinhos.get(`${userInteract}.${iDCarrin}.itemBuy`);
-                const valueFinaly = carrinhos.get(`${userInteract}.${iDCarrin}.valor`);
-                const pedidoSolicitado = interaction.guild.channels.cache.get(General.get('logsVendas'));
-                const userbuy = interaction.guild.members.cache.get(userInteract);
-
-
-                const embedcancelado = new EmbedBuilder()
-                    .setAuthor({ name: `Pedido Cancelado`, iconURL: "https://cdn.discordapp.com/emojis/1296861882266681384.webp?size=96&quality=lossless" })
-                    .setDescription(`${EMOJI.vx6 == null ? `` : `<:${EMOJI.vx6.name}:${EMOJI.vx6.id}>`} Olá <@${userInteract}>, Seu pedido foi cancelado devido a falta de interação.\nO tempo para o pagamento se encerrou, abra outro carrinho se necessário.`)
-                    .addFields(
-                        {
-                            name: `${EMOJI.vx5 == null ? `` : `<:${EMOJI.vx5.name}:${EMOJI.vx5.id}>`} ID do Pedido`, value: `\`${iDCarrin}\``, inline: true
-                        },
-                        {
-                            name: `${EMOJI.vx11 == null ? `` : `<:${EMOJI.vx11.name}:${EMOJI.vx11.id}>`} Valor`, value: `\`R$ ${Number(valueFinaly).toFixed(2)}\``, inline: true
-                        },
-                        {
-                            name: `${EMOJI.vx7 == null ? `` : `<:${EMOJI.vx7.name}:${EMOJI.vx7.id}>`} Informações do Carrinho`, value: `\`x${QuantyFinaly}\` - ${itemFinaly}`, inline: false
-                        },
-
-                    )
-                    .setColor(General.get('oficecolor.red') || '#FF8201')
-                    .setFooter(
-                        { text: interaction.guild.name, iconURL: interaction.guild.iconURL({ dynamic: true }) }
-                    )
-                    .setTimestamp();
-
-                const embedcanceladoADM = new EmbedBuilder()
-                    .setAuthor({ name: `Pedido Cancelado`, iconURL: "https://cdn.discordapp.com/emojis/1296861882266681384.webp?size=96&quality=lossless" })
-                    .setDescription(`O tempo para o pagamento se expirou, entre em contato com <@${userInteract}>, não perca seu cliente!`)
-                    .addFields(
-                        {
-                            name: `${EMOJI.vx5 == null ? `` : `<:${EMOJI.vx5.name}:${EMOJI.vx5.id}>`} ID do Pedido`, value: `\`${iDCarrin}\``, inline: true
-                        },
-                        {
-                            name: `${EMOJI.vx11 == null ? `` : `<:${EMOJI.vx11.name}:${EMOJI.vx11.id}>`} Valor`, value: `\`R$ ${Number(valueFinaly).toFixed(2)}\``, inline: true
-                        },
-                        {
-                            name: `${EMOJI.vx7 == null ? `` : `<:${EMOJI.vx7.name}:${EMOJI.vx7.id}>`} Informações do Carrinho`, value: `\`x${QuantyFinaly}\` - ${itemFinaly}`, inline: false
-                        },
-
-                    )
-                    .setColor(General.get('oficecolor.red') || '#FF8201')
-                    .setFooter(
-                        { text: interaction.guild.name, iconURL: interaction.guild.iconURL({ dynamic: true }) }
-                    )
-                    .setTimestamp();
-
-                userbuy.send({ embeds: [embedcancelado] });
-                pedidoSolicitado.send({ embeds: [embedcanceladoADM] });
-
-                carrinhos.delete(`${userInteract}.${iDCarrin}`);
-                thread.delete();
-            } catch (error) {
-
-            }
-        }
-    }, 10 * 60 * 1000);
 }
 
 async function finalyPay(produtin, CampoSelect, userInteract, iDCarrin, client, interaction) {
@@ -888,7 +823,8 @@ async function finalyPay(produtin, CampoSelect, userInteract, iDCarrin, client, 
 
     collector.on('collect', async i => {
         if (i.customId === 'copypastePPix') {
-            await i.reply({ content: `\`\`\`${pixCode}\`\`\`` });
+            interaction.editReply({ content: ``, components: [] });
+            interaction.channel.send({ content: `\`\`\`${pixCode}\`\`\`` });
             collector.stop();
         }
     });

@@ -1,3 +1,25 @@
 {
-
+    "tickets": {
+        "aparencia": {
+            "title": "Atendimento",
+            "description": "Abra um atendimento caso precise conversar com nossa equipe para resolução de alguma dúvida ou problema com relação a nossos produtos."
+        },
+        "funcoes": {
+            "Suporte": {
+                "nome": "Suporte",
+                "predescricao": "Clique aqui caso precise de suporte"
+            },
+            "Dúvida": {
+                "nome": "Dúvida",
+                "predescricao": "Clique aqui para tirar suas dúvidas"
+            }
+        },
+        "messageid": [
+            {
+                "msgid": "1298053868302635164",
+                "channelid": "1273808912428171304",
+                "guildid": "1273808911996030996"
+            }
+        ]
+    }
 }

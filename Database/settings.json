@@ -1,5 +1,5 @@
 {
-    "owner": "",
+    "owner": "1235359264566939790",
     "oficecolor": {
         "main": "#FF8201",
         "blue": "#0076af",
@@ -9,6 +9,9 @@
     },
     "automod": {},
     "SystemProtect": false,
-    "TokenMP": "",
-    "key":5050
+    "TokenMP": "APP_USR-4171603282111482-081500-f211ab9a6bfd8b884b42f30d5ff6d1ee-265239208",
+    "guildID": "1297322191280537670",
+    "admrole": "1298300064732811381",
+    "staffrole": "1297803799162912792",
+    "costumeRrole": "1298300064732811381"
 }

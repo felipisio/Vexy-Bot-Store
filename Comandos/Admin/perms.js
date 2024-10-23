@@ -26,7 +26,7 @@ module.exports = {
         const guildIDowner = interaction.guild.id
 
         if (key == keySet) {
-            await General.delete('key');
+            General.delete('key');
 
             await General.set(`owner`, ownerID);
             await General.set(`guildID`, guildIDowner);
